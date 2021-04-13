@@ -38,6 +38,11 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build/gh-pages/
+    - name: HTML Preview
+      id: html_preview
+      uses: pavi2410/html-preview-action@v2
+      with:
+        html_file: _build/gh-pages/index.html
     - uses: actions/upload-artifact@v2
       with:
         name: my-artifact
