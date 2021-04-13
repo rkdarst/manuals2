@@ -1,0 +1,474 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Instructor technical setup &mdash; CodeRefinery manuals  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_rtd_theme_ext_color_contrast.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/togglebutton.js"></script>
+        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Team teaching" href="../team-teaching/" />
+    <link rel="prev" title="Lesson presentation hints" href="../presenting/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../" class="icon icon-home"> CodeRefinery manuals
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Learners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../how-to-attend-online/">Attending an online workshop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how-to-attend-inperson/">Attending an in-person workshop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zoom-mechanics/">Zoom mechanics and signals (tutorial for learners)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hackmd-mechanics/">Hackmd mechanics (tutorial for learners)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Helpers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../helper-intro/">Helper's intro (tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helping-and-teaching/">Helper's guide (tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../breakout-rooms-helping/">How helpers manage breakout rooms (tutorial)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Instructors and staff</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../instructor-intro/">Instructor introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hackmd-helper/">HackMD helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../expert-helpers/">Expert helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../host/">Host in workshops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop-prep-call/">Workshop preparation meeting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../presenting/">Lesson presentation hints (checklist)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Instructor technical setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#terminal-usage">Terminal usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#screen-sharing">Screen sharing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#screen-share-examples">Screen share examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#screen-layout-learners">Screen layout: learners</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#screen-layout-instructors">Screen layout: instructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#terminal-history-window">Terminal history window</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#terminal-history-for-learners">Terminal history for learners</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../team-teaching/">Team teaching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-tech-together/">Summary of the book &quot;Teaching Teach Together&quot; (reference)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Online teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../online/">Online teaching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../obs/">Open Broadcaster Software</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Workshop organizers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workshop-requirements-inperson/">Workshop basic requirements (in person) (checklist)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop-administration/">Workshop administration (reference)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../online-training/">Online training manual (tutorial, reference)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../indico-workshop-management/">Guide on how to use Indico (reference)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../icebreakers/">Icebreaker question ideas (reference)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../video-editing/">Workshp video editing (tutorial)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson designers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../lesson-design/">Lesson design tutorial and reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lesson-review/">Lesson review checklist</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tech-docs/">Writing technical docs (reference)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About CodeRefinery</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chat/">Chat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../the-project/">The project</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery manuals</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Instructor technical setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/coderefinery/manuals/blob/master/instructor-tech-setup.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="instructor-technical-setup">
+<h1>Instructor technical setup<a class="headerlink" href="#instructor-technical-setup" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="terminal-usage">
+<h2>Terminal usage<a class="headerlink" href="#terminal-usage" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Move your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> and <code class="docutils literal notranslate"><span class="pre">.gitconfig</span></code> files to somewhere else before
+you begin.  You want your environment to match the student’s as
+closely as possible. Consider setting <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PS1=&quot;\w</span> <span class="pre">$</span> <span class="pre">&quot;</span></code> in
+terminal (see below for more).</p></li>
+<li><p>Create a nice, large shell window with good contrast on the screen.
+Beware of colorized text, such as the red in “git diff”.</p></li>
+<li><p>Don’t clear terminal often (or ever)</p></li>
+</ul>
+</div>
+<div class="section" id="screen-sharing">
+<h2>Screen sharing<a class="headerlink" href="#screen-sharing" title="Permalink to this headline">¶</a></h2>
+<p>You have to assume the smallest screen from learners and plan for that.</p>
+<ul class="simple">
+<li><p>Learners have a small screen, and need room for their own terminals
+and web browser open, too.  A big screen or multiple monitors is
+special.</p></li>
+<li><p>Make sure the text is more than large enough - people are not just
+reading, but struggling to find the important parts while the.</p></li>
+<li><p>Sharing a 1920x1080 screen is not a good idea: you need to make all
+the text size large so that learners can scale it down, but pixels
+are wasted.</p></li>
+<li><p>Sharing a single window would be good, but usually you need more
+than one.</p></li>
+<li><p>Zoom now has a “share portion of screen” (Screen sharing → Advanced
+→ Share a portion of the screen).</p></li>
+<li><p>Our latest idea is:</p>
+<ul>
+<li><p>Share a vertical part of the screen, for example half of your
+screen.</p></li>
+<li><p>If you have a FullHD 1920x1080 screen, maybe even a smaller
+portion than that.</p></li>
+</ul>
+</li>
+</ul>
+<p>When streaming/recording: <strong>Never stop sharing a screen, ask someone
+else to take it over</strong>.
+There is a chance that the view goes to “gallery view” in the
+recording or stream, which makes video editing harder or disrupts
+learner privacy.</p>
+<div class="section" id="screen-share-examples">
+<h3>Screen share examples<a class="headerlink" href="#screen-share-examples" title="Permalink to this headline">¶</a></h3>
+<p>These are layouts of the actual screen or portion of screen being
+shared:</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/screenshare-fullhd.png"><img alt="../_images/screenshare-fullhd.png" src="../_images/screenshare-fullhd.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text"><strong>S1</strong>: A FullHD 1920x1080 screen shared.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/screenshare-vertical.png"><img alt="../_images/screenshare-vertical.png" src="../_images/screenshare-vertical.png" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-text"><strong>S2</strong>: A vertical screen layout shared.  Note the extra shell history at the
+top.  The web browser is at the bottom, because the Zoom toolbar can
+cover the bottom bit.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/screenshare-jupyter.png"><img alt="../_images/screenshare-jupyter.png" src="../_images/screenshare-jupyter.png" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-text"><strong>S3</strong>: A sort-of GUI (Jupyter) shared vertically.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/screenshare-rsh.png"><img alt="../_images/screenshare-rsh.png" src="../_images/screenshare-rsh.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text"><strong>S4</strong>: This isn’t a screenshare from CodeRefinery, but may be instructive.
+Note the horizontal layout and shell history at the bottom right.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="screen-layout-learners">
+<h3>Screen layout: learners<a class="headerlink" href="#screen-layout-learners" title="Permalink to this headline">¶</a></h3>
+<p>This is how learners can arrange their screen:</p>
+<div class="figure align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/learner-largescreen.png"><img alt="../_images/learner-largescreen.png" src="../_images/learner-largescreen.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text"><strong>L1</strong>: Learner with a large screen, Zoom in dual-monitor mode so that the
+instructur pictures are not shown.  Screenshare is on the left side,
+HackMD at bottom left, terminal and web browser on the right.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/learner-normal.png"><img alt="../_images/learner-normal.png" src="../_images/learner-normal.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text"><strong>L2</strong>: A learner with a single large screen (Zoom in “single monitor mode”).
+Instructor screen share at right, learner stuff at left.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/learner-small.png"><img alt="../_images/learner-small.png" src="../_images/learner-small.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text"><strong>L3</strong>: A learner with a particularly small screen.  Instructur screenshare at
+left, your windows at right.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="screen-layout-instructors">
+<h2>Screen layout: instructors<a class="headerlink" href="#screen-layout-instructors" title="Permalink to this headline">¶</a></h2>
+<p>This is what the instructor sees on their screen:</p>
+<div class="figure align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/instructor.png"><img alt="../_images/instructor.png" src="../_images/instructor.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text"><strong>I1</strong>: Vertical instructor setup.  Zoom is sharing a portion of the left
+side, the right side is free for following HackMD, chat, etc (but
+don’t overload yourself).</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="terminal-history-window">
+<h2>Terminal history window<a class="headerlink" href="#terminal-history-window" title="Permalink to this headline">¶</a></h2>
+<p>Set an easily-viewable prompt.  Colors may be good, or if not have a
+newline (don’t little minimal color and no spacing between commands,
+it is hard to parse what’s a command and what’s an output.)  The
+minimum is <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PS1='\n\w</span> <span class="pre">\$</span> <span class="pre">'</span></code>.  With color is <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PS1='\n\[\e[0;36m\]\w</span> <span class="pre">\$\[\e[0m\]</span> <span class="pre">'</span></code>.</p>
+<div class="section" id="terminal-history-for-learners">
+<h3>Terminal history for learners<a class="headerlink" href="#terminal-history-for-learners" title="Permalink to this headline">¶</a></h3>
+<p>If you are doing live shell work, you will have commands and output
+all interleaved, which makes it hard to follow what you actually
+typed.  Have a separate window that shows recent commands only,
+without output.  Arrange your screen so there is the main window and
+the smaller “history” window.  The history window runs the tail
+commands and can be used as a reference for what you just did.</p>
+<p>Also check the <a class="reference external" href="https://github.com/Sabryr/Teaching-aids">shell exporter by
+sabryr</a>, which copies recent
+history to a remote server.</p>
+<p><strong>Simple</strong>: The simple way is <code class="docutils literal notranslate"><span class="pre">PROMPT_COMMAND=&quot;history</span> <span class="pre">-a&quot;</span></code> and then
+<code class="docutils literal notranslate"><span class="pre">tail</span> <span class="pre">-f</span> <span class="pre">-n0</span> <span class="pre">~/.bash_history</span></code>, but this doesn’t capture ssh,
+subshells, and only shows the command after it is completed.</p>
+<p><strong>Better yet still simple</strong>: Many Software Carpentry instructors use
+<a class="reference external" href="https://github.com/rgaiacs/swc-shell-split-window">this script</a>,
+which sets the prompt, splits the terminal window using tmux and displays command history
+in the upper panel. Requirement: <a class="reference external" href="https://github.com/tmux/tmux/wiki">tmux</a></p>
+<p><strong>Better (bash)</strong>: This prints the output before the command is run,
+instead of after.  Tail with <code class="docutils literal notranslate"><span class="pre">tail</span> <span class="pre">-f</span> <span class="pre">~/demos.out</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>BASH_LOG=~/demos.out
+bash_log_commands () {
+    # https://superuser.com/questions/175799
+    [ -n &quot;$COMP_LINE&quot; ] &amp;&amp; return  # do nothing if completing
+    [[ &quot;$PROMPT_COMMAND&quot; =~ &quot;$BASH_COMMAND&quot; ]] &amp;&amp; return # don&#39;t cause a preexec for $PROMPT_COMMAND
+    local this_command=`HISTTIMEFORMAT= history 1 | sed -e &quot;s/^[ ]*[0-9]*[ ]*//&quot;`;
+    echo &quot;$this_command&quot; &gt;&gt; &quot;$BASH_LOG&quot;
+}
+trap &#39;bash_log_commands&#39; DEBUG
+</pre></div>
+</div>
+<p><strong>Better (zsh)</strong>: This works like above, with zsh.  Tail with <code class="docutils literal notranslate"><span class="pre">tail</span> <span class="pre">-f</span> <span class="pre">~/demos.out</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>preexec() { echo $1 &gt;&gt; ~/demos.out }
+</pre></div>
+</div>
+<p><strong>Better (fish)</strong>: This works like above, but for fish.  Tail with
+<code class="docutils literal notranslate"><span class="pre">tail</span> <span class="pre">-f</span> <span class="pre">~/demos.out</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">function</span> <span class="n">cmd_log</span> <span class="o">--</span><span class="n">on</span><span class="o">-</span><span class="n">event</span> <span class="n">fish_preexec</span> <span class="p">;</span> <span class="n">echo</span> <span class="s2">&quot;$argv&quot;</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="n">demos</span><span class="o">.</span><span class="n">out</span>  <span class="p">;</span> <span class="n">end</span>
+</pre></div>
+</div>
+<p><strong>Better (tmuxp)</strong>: This will save some typing. <a class="reference external" href="https://tmuxp.git-pull.com/">TmuxP</a> is a Python program (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">tmuxp</span></code>) that gives you programmable <code class="docutils literal notranslate"><span class="pre">tmux</span></code> sessions. One configuration that works (in this case for <code class="docutils literal notranslate"><span class="pre">fish</span></code> shell):</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">session_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">demo</span>
+<span class="nt">windows</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">window_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">demo</span>
+    <span class="nt">layout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main-horizontal</span>
+    <span class="nt">options</span><span class="p">:</span>
+      <span class="nt">main-pane-height</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">7</span>
+    <span class="nt">panes</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">shell_command</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">touch /tmp/demo.history</span>
+          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">tail -f /tmp/demo.history</span>
+      <span class="p p-Indicator">-</span> <span class="nt">shell_command</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">function cmd_log --on-event fish_preexec ; echo &quot;$argv&quot; &gt;&gt; /tmp/demo.history  ; end</span>
+</pre></div>
+</div>
+<p><strong>Windows PowerShell</strong>: In <a class="reference external" href="https://docs.microsoft.com/en-us/windows/terminal/">Windows Terminal</a>,
+a split can be made by pressing <code class="docutils literal notranslate"><span class="pre">CTRL+SHIFT+=</span></code>. Then, in one of the splits, the following
+PowerShell command will start tracking the shell history:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Get</span><span class="o">-</span><span class="n">Content</span> <span class="p">(</span><span class="n">Get</span><span class="o">-</span><span class="n">PSReadlineOption</span><span class="p">)</span><span class="o">.</span><span class="n">HistorySavePath</span> <span class="o">-</span><span class="n">Wait</span>
+</pre></div>
+</div>
+<p>Unfortunately, this only shows commands after they have been executed.</p>
+<p><strong>Obselete</strong>: The below commands rely on recording your entire session
+using <code class="docutils literal notranslate"><span class="pre">script</span></code>, and then dynamically following the output.  This
+allows you to track commands even in subshells/over ssh, but introduce
+a lot of other errors in corner cases.  These might work but needs
+debugging (there are lots of complexities in extracting out the right
+parts).  Note: some of these ignore the first line you type.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>script -f demos.out
+
+# most general... prompt must end in &#39;$ &#39;.
+tail -n 0 -f demos.out | awk &#39;{ if (match($0,/^[^$ ]+ ?[^$ ]*[$][[:cntrl:]0-9m;[]{,10} (.*)/,m)) print m[1] }&#39;
+
+# Prompt format of [username@host]$
+tail -n 1 -f demos.out | while read line; do [[ &quot;$line&quot; =~ \]\$\ ([^ ].+)$ ]] &amp;&amp; echo  ${BASH_REMATCH[1]}; done
+
+# Standard bash prompt of &#39;user@host$ &#39; (less likely to have false positives)
+tail -n 0 -f demos.out | awk &#39;{ if (match($0,/^[^@]+@[^$]+[$][^ ]* (.*)/,m)) print m[1] }&#39;
+
+# Prompt is $ &#39; alone on a line.
+tail -n 0 -f demos.out | awk &#39;{ if (match($0,/^[$] (.*)/,m)) print m[1] }&#39;
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># used for the fish shell (note: untested)
+tail -f -n 0 ~/fish_history | sed -u -e s&#39;/- cmd:/ \&gt;/&#39;
+
+# used for zsh shell (put this into a script file)
+clear &gt;$(tty)
+tail -n 0 -f ~/.zsh_history | awk -F\; &#39;NF!=1{printf(&quot;\n%s&quot;,$NF)}NF==1{printf(&quot;n %s &quot;,$1)}&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../team-teaching/" class="btn btn-neutral float-right" title="Team teaching" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../presenting/" class="btn btn-neutral float-left" title="Lesson presentation hints" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, The CodeRefinery team.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
