@@ -15,21 +15,20 @@ default: html
 # but is put here instead of in the Actions file to avoid locking us
 # in to the github actions formats.
 gh-pages-dependencies:
-	apt install texlive-latex-recommended \
-	    texlive-fonts-recommended \
-	    texlive-fonts-extra \
-            texlive-latex-extra \
-	    texlive-xetex \
-            latexmk
+	true
+#	apt install texlive-latex-recommended \
+#	    texlive-fonts-recommended \
+#	    texlive-fonts-extra \
+#            texlive-latex-extra \
+#	    texlive-xetex \
+#            latexmk
 # Do all required building for gh-pages, copy the site to
 # _build/gh-pages.
-gh-pages: dirhtml singlehtml latexpdf epub
+gh-pages: dirhtml singlehtml
 	mkdir -p _build/gh-pages/
 	mkdir -p _build/gh-pages/_builds/
 	rsync -a _build/dirhtml/ _build/gh-pages/
 	rsync -a _build/singlehtml/ _build/gh-pages/_builds/singlehtml/
-	rsync -a _build/epub/CodeRefineryManuals.epub _build/gh-pages/_builds/
-	rsync -a _build/latex/CodeRefineryManuals.pdf _build/gh-pages/_builds/
 
 # Put it first so that "make" without argument is like "make help".
 help:
